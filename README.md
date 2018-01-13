@@ -1,4 +1,7 @@
 # Macy.js
+
+This repo is a fork of [Macy.js](https://github.com/bigbitecreative/macy.js). In this branch Macy was customized to only select visible children of container, the purpose is for using Macy with filter libraries like [MixItUp](https://github.com/patrickkunka/mixitup).
+
 Macy.js is a lightweight dependency-free JavaScript library designed to sort items vertically into columns by finding an optimum layout with a minimum height.
 
 ## Installing
@@ -69,7 +72,7 @@ Set this to true if you would prefer to use a different image loaded library.
 #### **mobileFirst**
 *Default: `false`*
 
-Setting this value to true will alter how the breakAt options will work. Macy will now work in a mobile first way so the default `columns` will be the default then if for example you have `400: 2` in your breakAt object, if the document is greater or equal to 400px the column count will be 2. 
+Setting this value to true will alter how the breakAt options will work. Macy will now work in a mobile first way so the default `columns` will be the default then if for example you have `400: 2` in your breakAt object, if the document is greater or equal to 400px the column count will be 2.
 
 #### **breakAt**
 
@@ -79,9 +82,9 @@ If the viewport resizes after the page has loaded, Macy will rerun to ensure opt
 
 If the column is set to one then Macy will remove all styling to leave you to style it perfectly on mobile.
 
-Added in v2.1 breakAt now supports changing margin within these breakpoints. 
+Added in v2.1 breakAt now supports changing margin within these breakpoints.
 
-For example 
+For example
 
 ```
 {
