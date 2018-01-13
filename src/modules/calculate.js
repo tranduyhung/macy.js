@@ -10,7 +10,7 @@ import foreach from '../helpers/foreach';
  * @param  {Boolean} loaded  - Should all elements be marked as complete
  */
 const calculate = (ctx, refresh = false, loaded = true) => {
-  let children = refresh ? ctx.container.children : $e(':scope > *:not([data-macy-complete="1"])', ctx.container);
+  let children = refresh ? $e(':scope > *:not([style*="display:none"]):not([style*="display: none"])', ctx.container) : $e(':scope > *:not([data-macy-complete="1"]):not([style*="display:none"]):not([style*="display: none"])', ctx.container);
   let eleWidth = getWidths(ctx.options);
 
   foreach(children, (child) => {
